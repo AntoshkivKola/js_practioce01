@@ -34,3 +34,6 @@ console.log(arr4);
 const arr5 = [1, 2, 3, 4, 5];
 let arr6 = arr5.slice(0,3);
 console.log(arr6);
+//8. Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
+arr6 = arr5.slice(3);
+console.log(arr6);
