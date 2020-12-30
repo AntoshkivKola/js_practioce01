@@ -12,7 +12,7 @@ const mas = [4, -2, 5, 19, -130, 0, 10];
  * @returns {number}
  */
 function getMax(mas) {
-  let max = 0;
+  let max = mas[0];
   for (let i = 0; i < mas.length; i++) {
     if (mas[i] > max) {
       max = mas[i];
@@ -27,7 +27,7 @@ function getMax(mas) {
  * @returns {number}
  */
 function getMin(mas) {
-  let min = 0;
+  let min = mas[0];
   for (let i = 0; i < mas.length; i++) {
     if (mas[i] < min) {
       min = mas[i];
