@@ -89,3 +89,26 @@ function hasElem(arr, string) {
   return false;
 }
 
+/* 
+Дан массив с числами. 
+Проверьте, что в этом массиве есть указанное число. 
+Если есть - вернуть true, а если нет - вернуть false.
+*/
+
+/**
+ * function checks if there is such a number in the array
+ * @param {Array numbers}  arr
+ * @param {number} number
+ * 
+ * @returns {bullean}
+*/
+function hasElemNumber(arr, number) {
+  for (let i = 0; i < arr.length; i++) {
+    if (number === arr[i]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+
