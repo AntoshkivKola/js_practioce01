@@ -1,31 +1,40 @@
-const Leadder = function (maxStep) {
-  this.value = 0;
-  this.maxStep = maxStep;
+//task1
+/*
+Даны числа 4, -2, 5, 19, -130, 0, 10. 
+Найдите минимальное и максимальное число.
+*/
+
+const mas = [4, -2, 5, 19, -130, 0, 10];
+
+/**
+ * get max element
+ * @param {Array numbers} mas
+ * @returns {number}
+ */
+function getMax(mas){
+  let max = 0;
+ for(let i = 0;i <= mas.length ;i++){
+   if(mas[i] > max){
+    max = mas[i];
+   }
+ }
+ return max;
 }
 
-const LeadderPrototype = function () {
-  this.up = function(){ 
-   
-      if (this.value >= this.maxStep) {
-        return false;
-      }
-      ++this.value;
-      return this;
-     
-    
-  }
-this.down = function down() {
-  if (this.value <= 0) {
-    return false;
-  }
-  --this.value;
-  return this;
-}
-this.showStep = function showStep() {
-  return this.value;
-}
+/**
+ * get min element
+ * @param {Array numbers} mas
+ * @returns {number}
+ */
+function getMin(mas){
+  let min = 0;
+ for(let i = 0; i <= mas.length ;i++){
+   if(mas[i] < min){
+    min = mas[i];
+   }
+ }
+ return min;
 }
 
-Leadder.prototype = new LeadderPrototype();
-
-const leadder1 = new Leadder(10);
+console.log(getMax(mas));
+console.log(getMin(mas));
