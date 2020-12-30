@@ -14,7 +14,7 @@ arr1.reverse();
 arr1.push(4, 5, 6);
 console.log(arr1);
 //4. Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
-arr1.unshift(4,5,6);
+arr1.unshift(4, 5, 6);
 console.log(arr1);
 
 //5.  Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент и удалите его.
@@ -30,7 +30,7 @@ console.log(arr4);
 
 //7. Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
 const arr5 = [1, 2, 3, 4, 5];
-let arr6 = arr5.slice(0,3);
+let arr6 = arr5.slice(0, 3);
 console.log(arr6);
 //8. Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
 arr6 = arr5.slice(3);
@@ -38,11 +38,11 @@ console.log(arr6);
 
 //9. Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].
 arr6 = [1, 2, 3, 4, 5];
-arr6.splice(1,2);
+arr6.splice(1, 2);
 console.log(arr6);
 //10. Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
 arr6 = [1, 2, 3, 4, 5];
-arr7 = arr6.splice(1,3);
+arr7 = arr6.splice(1, 3);
 console.log(arr7);
 //11. Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 2, 3, 'a', 'b', 'c', 4, 5].
 arr6 = [1, 2, 3, 4, 5];
@@ -61,6 +61,31 @@ arr6.sort();
 console.log(arr6);
 
 //14. Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
-obj1 = {js:'test', jq: 'hello', css: 'world'};
+obj1 = { js: 'test', jq: 'hello', css: 'world' };
 arr6 = Object.keys(obj1);
 console.log(arr6);
+
+// advanced 
+/* 
+необходимо создать функцию hasElem, 
+которая параметрами будет принимать массив и строку, 
+и возвращать true, если строка есть в массиве, 
+и false - если нет
+*/
+
+/**
+ * function checks if there is such a string in the array
+ * @param {Array} arr
+ * @param {string} string
+ * 
+ * @returns {bullean}
+*/
+function hasElem(arr, string) {
+  for (let i = 0; i < arr.length; i++) {
+    if (string === arr[i]) {
+      return true;
+    }
+  }
+  return false;
+}
+
