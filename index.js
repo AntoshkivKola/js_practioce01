@@ -60,3 +60,12 @@ function getAverage(mas) {
   return average / mas.length;
 }
 console.log(getAverage(arr));
+
+
+// task3
+/*
+Выведите на экран случайное целое число от 1 до 100.
+Заполните массив 10-ю случайными целыми числами. 
+*/
+
+console.log(Math.round(Math.random()*100));
