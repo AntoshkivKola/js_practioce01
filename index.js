@@ -111,4 +111,26 @@ function hasElemNumber(arr, number) {
   return false;
 }
 
+/* 
+Дан массив с числами.
+Проверьте, есть ли в нем два одинаковых числа подряд.
+Если есть -  вернуть true, а если нет - вернуть false.
+*/
 
+/**
+ * function checks has two identical numbers in a row
+ * @param {Array numbers}  arr
+ * 
+ * @returns {bullean}
+*/
+function hasTwoIdenticalNumbers(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i+1]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+let arr34 = [1,5.8,4,4,7,9,8];
+console.log(hasTwoIdenticalNumbers(arr34));
