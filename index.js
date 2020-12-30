@@ -54,3 +54,13 @@ arr6.splice(1, 0, 'a', 'b');
 arr6.splice(6, 0, 'c');
 arr6.splice(8, 0, 'e');
 console.log(arr6);
+
+//13. Дан массив [3, 4, 1, 2, 7]. Отсортируйте его.
+arr6 = [3, 4, 1, 2, 7];
+arr6.sort();
+console.log(arr6);
+
+//14. Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
+obj1 = {js:'test', jq: 'hello', css: 'world'};
+arr6 = Object.keys(obj1);
+console.log(arr6);
