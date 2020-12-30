@@ -1,77 +1,19 @@
-//task1
-/*
-Даны числа 4, -2, 5, 19, -130, 0, 10. 
-Найдите минимальное и максимальное число.
-*/
+//Даны два массива: [1, 2, 3] и [4, 5, 6]. Объедините их вместе.
 
-const mas = [4, -2, 5, 19, -130, 0, 10];
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = arr1.concat(arr2);
+console.log(arr3);
 
-/**
- * get max element
- * @param {Array numbers} mas
- * @returns {number}
- */
-function getMax(mas) {
-  let max = mas[0];
-  for (let i = 0; i < mas.length; i++) {
-    if (mas[i] > max) {
-      max = mas[i];
-    }
-  }
-  return max;
-}
+//Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1].
+arr1.reverse();
+console.log(arr1);
 
-/**
- * get min element
- * @param {Array numbers} mas
- * @returns {number}
- */
-function getMin(mas) {
-  let min = mas[0];
-  for (let i = 0; i < mas.length; i++) {
-    if (mas[i] < min) {
-      min = mas[i];
-    }
-  }
-  return min;
-}
+// Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6.
+arr1.reverse();
+arr1.push(4, 5, 6);
+console.log(arr1);
 
-console.log(getMax(mas));
-console.log(getMin(mas));
-
-
-// task2 
-/*
-Дан массив arr. \
-Найдите среднее арифметическое его элементов. 
-Проверьте задачу на массиве с элементами 12, 15, 20, 25, 59, 79.
-*/
-const arr = [12, 15, 20, 25, 59, 79];
-/**
- * get average of numbers
- * @param {Array numbers} mas
- * @returns {number}
- */
-function getAverage(mas) {
-  let average = 0;
-  for (let i = 0; i < mas.length; i++) {
-    average += mas[i];
-  }
-  return average / mas.length;
-}
-console.log(getAverage(arr));
-
-
-// task3
-/*
-Выведите на экран случайное целое число от 1 до 100.
-Заполните массив 10-ю случайными целыми числами. 
-*/
-
-console.log(Math.round(Math.random()*100));
-
-let arr1 = [];
-for(let i = 0; i < 10; i++){
-  arr1.push(Math.round(Math.random()*100));
-}
+// Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
+arr1.unshift(4,5,6);
 console.log(arr1);
